@@ -1,0 +1,61 @@
+REACHMICRO - NEXT STEPS
+========================
+
+1. SET UP ENVIRONMENT VARIABLES
+   Copy .env.example to .env and fill in:
+   - DATABASE_URL (for production, use PostgreSQL)
+   - NEXTAUTH_SECRET (generate with: openssl rand -base64 32)
+   - NEXTAUTH_URL (your production URL)
+   - STRIPE_SECRET_KEY (from Stripe Dashboard)
+   - STRIPE_PUBLISHABLE_KEY (from Stripe Dashboard)
+   - STRIPE_WEBHOOK_SECRET (from Stripe webhooks)
+   - STRIPE_PRICE_ID_STARTER (create in Stripe Products)
+   - STRIPE_PRICE_ID_PRO (create in Stripe Products)
+
+2. SET UP STRIPE
+   - Create account at stripe.com
+   - Create two products: Starter ($29/mo) and Pro ($79/mo)
+   - Copy the price IDs to your .env
+   - Set up webhook endpoint: https://yourdomain.com/api/stripe/webhook
+   - Enable events: checkout.session.completed, invoice.payment_succeeded, customer.subscription.deleted
+
+3. DEPLOY TO VERCEL (RECOMMENDED)
+   - Push code to GitHub
+   - Connect repo to Vercel
+   - Add environment variables in Vercel dashboard
+   - Deploy
+
+   OR DEPLOY WITH DOCKER
+   - docker-compose up -d
+   - Set up reverse proxy (nginx/caddy) for HTTPS
+
+4. SET UP PRODUCTION DATABASE
+   - For Vercel: Use Vercel Postgres or PlanetScale
+   - Update prisma/schema.prisma provider to "postgresql" or "mysql"
+   - Run: npx prisma db push
+
+5. SEED PRODUCTION DATA
+   - npx tsx prisma/seed.ts
+   - Or import your own influencer data
+
+6. TEST THE APP
+   - Register a new account
+   - Browse influencers at /discover
+   - Create a campaign
+   - Test Stripe checkout (use test mode first)
+
+7. GO LIVE
+   - Switch Stripe to live mode
+   - Update webhook with live secret
+   - Monitor for errors
+
+LOCAL DEVELOPMENT
+-----------------
+npm run dev        - Start dev server
+npm run db:studio  - Open Prisma Studio
+npm run db:seed    - Seed demo data
+npm run build      - Build for production
+
+SUPPORT
+-------
+Issues? Check the console for errors or review the API routes in src/app/api/
