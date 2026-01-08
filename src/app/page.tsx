@@ -22,9 +22,9 @@ export default function HomePage() {
     <div className="min-h-screen bg-[#0a0a0f] text-white overflow-x-hidden">
       {/* Gradient background effects */}
       <div className="fixed inset-0 pointer-events-none">
-        <div className="absolute top-0 left-1/4 w-[500px] h-[500px] bg-violet-600/20 rounded-full blur-[120px]" />
-        <div className="absolute top-1/3 right-1/4 w-[400px] h-[400px] bg-fuchsia-600/20 rounded-full blur-[120px]" />
-        <div className="absolute bottom-1/4 left-1/3 w-[300px] h-[300px] bg-cyan-600/10 rounded-full blur-[100px]" />
+        <div className="absolute top-0 left-1/4 w-[500px] h-[500px] bg-cyan-500/10 rounded-full blur-[150px]" />
+        <div className="absolute top-1/3 right-1/4 w-[400px] h-[400px] bg-teal-500/10 rounded-full blur-[150px]" />
+        <div className="absolute bottom-1/4 left-1/3 w-[300px] h-[300px] bg-blue-500/10 rounded-full blur-[120px]" />
       </div>
 
       {/* Navigation */}
@@ -33,7 +33,7 @@ export default function HomePage() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <Link href="/" className="flex items-center gap-2">
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-violet-500 to-fuchsia-500 flex items-center justify-center">
+              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-cyan-400 to-teal-500 flex items-center justify-center">
                 <Sparkles className="w-4 h-4 text-white" />
               </div>
               <span className="text-xl font-bold">ReachMicro</span>
@@ -54,7 +54,7 @@ export default function HomePage() {
                 Sign in
               </Link>
               <Link href="/register" className="relative group">
-                <div className="absolute -inset-0.5 bg-gradient-to-r from-violet-600 to-fuchsia-600 rounded-lg blur opacity-60 group-hover:opacity-100 transition duration-200" />
+                <div className="absolute -inset-0.5 bg-gradient-to-r from-cyan-500 to-teal-500 rounded-lg opacity-80 group-hover:opacity-100 transition duration-200" />
                 <span className="relative flex items-center gap-2 bg-[#0a0a0f] px-4 py-2 rounded-lg text-sm font-medium">
                   Get Started Free
                   <ArrowRight className="w-4 h-4" />
@@ -79,7 +79,7 @@ export default function HomePage() {
             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-[1.1] tracking-tight">
               Find micro-influencers
               <br />
-              <span className="bg-gradient-to-r from-violet-400 via-fuchsia-400 to-cyan-400 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-cyan-400 via-teal-400 to-emerald-400 bg-clip-text text-transparent">
                 10x faster
               </span>
             </h1>
@@ -92,8 +92,8 @@ export default function HomePage() {
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
               <Link href="/register" className="relative group w-full sm:w-auto">
-                <div className="absolute -inset-1 bg-gradient-to-r from-violet-600 to-fuchsia-600 rounded-xl blur-lg opacity-70 group-hover:opacity-100 transition duration-200" />
-                <span className="relative flex items-center justify-center gap-2 bg-gradient-to-r from-violet-600 to-fuchsia-600 px-8 py-4 rounded-xl text-lg font-semibold w-full">
+                <div className="absolute -inset-0.5 bg-gradient-to-r from-cyan-500 to-teal-500 rounded-xl opacity-40 group-hover:opacity-60 transition duration-200" />
+                <span className="relative flex items-center justify-center gap-2 bg-gradient-to-r from-cyan-500 to-teal-500 px-8 py-4 rounded-xl text-lg font-semibold w-full">
                   Start Free Trial
                   <ArrowRight className="w-5 h-5" />
                 </span>
@@ -135,8 +135,8 @@ export default function HomePage() {
               { value: "98%", label: "Happy Customers", icon: Star },
             ].map((stat) => (
               <div key={stat.label} className="text-center">
-                <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-gradient-to-br from-violet-500/20 to-fuchsia-500/20 border border-white/10 mb-4">
-                  <stat.icon className="w-6 h-6 text-violet-400" />
+                <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-gradient-to-br from-cyan-500/20 to-teal-500/20 border border-white/10 mb-4">
+                  <stat.icon className="w-6 h-6 text-cyan-400" />
                 </div>
                 <p className="text-4xl font-bold bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">{stat.value}</p>
                 <p className="text-gray-500 mt-1">{stat.label}</p>
@@ -150,13 +150,13 @@ export default function HomePage() {
       <section id="features" className="py-24 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <span className="inline-block px-4 py-1.5 rounded-full bg-violet-500/10 border border-violet-500/20 text-violet-400 text-sm font-medium mb-4">
+            <span className="inline-block px-4 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-sm font-medium mb-4">
               Features
             </span>
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
               Everything you need to
               <br />
-              <span className="bg-gradient-to-r from-violet-400 to-fuchsia-400 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-cyan-400 to-teal-400 bg-clip-text text-transparent">
                 scale influencer marketing
               </span>
             </h2>
@@ -171,7 +171,7 @@ export default function HomePage() {
                 icon: Search,
                 title: "Smart Discovery",
                 description: "Find micro-influencers by niche, location, engagement rate, and follower count across all platforms.",
-                gradient: "from-violet-500 to-purple-500",
+                gradient: "from-cyan-500 to-teal-500",
               },
               {
                 icon: Users,
@@ -189,7 +189,7 @@ export default function HomePage() {
                 icon: BarChart3,
                 title: "Analytics Dashboard",
                 description: "See response rates, conversion metrics, and campaign performance. Make data-driven decisions.",
-                gradient: "from-fuchsia-500 to-pink-500",
+                gradient: "from-blue-500 to-indigo-500",
               },
               {
                 icon: Zap,
@@ -220,15 +220,15 @@ export default function HomePage() {
       </section>
 
       {/* How it works */}
-      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-transparent via-violet-950/20 to-transparent">
+      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-transparent via-cyan-950/10 to-transparent">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <span className="inline-block px-4 py-1.5 rounded-full bg-fuchsia-500/10 border border-fuchsia-500/20 text-fuchsia-400 text-sm font-medium mb-4">
+            <span className="inline-block px-4 py-1.5 rounded-full bg-teal-500/10 border border-teal-500/20 text-teal-400 text-sm font-medium mb-4">
               How It Works
             </span>
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
               Launch campaigns in
-              <span className="bg-gradient-to-r from-fuchsia-400 to-cyan-400 bg-clip-text text-transparent"> minutes</span>
+              <span className="bg-gradient-to-r from-teal-400 to-cyan-400 bg-clip-text text-transparent"> minutes</span>
             </h2>
           </div>
 
@@ -259,8 +259,8 @@ export default function HomePage() {
                 )}
                 <div className="relative p-8 rounded-2xl bg-white/[0.02] border border-white/5">
                   <span className="text-6xl font-bold text-white/5 absolute top-4 right-6">{item.step}</span>
-                  <div className="inline-flex p-3 rounded-xl bg-gradient-to-br from-violet-500/20 to-fuchsia-500/20 border border-white/10 mb-4">
-                    <item.icon className="w-6 h-6 text-violet-400" />
+                  <div className="inline-flex p-3 rounded-xl bg-gradient-to-br from-cyan-500/20 to-teal-500/20 border border-white/10 mb-4">
+                    <item.icon className="w-6 h-6 text-cyan-400" />
                   </div>
                   <h3 className="text-2xl font-semibold mb-3">{item.title}</h3>
                   <p className="text-gray-400">{item.description}</p>
@@ -324,10 +324,10 @@ export default function HomePage() {
 
             {/* Pro Plan */}
             <div className="relative">
-              <div className="absolute -inset-px bg-gradient-to-b from-violet-500 to-fuchsia-500 rounded-2xl" />
+              <div className="absolute -inset-px bg-gradient-to-b from-cyan-500 to-teal-500 rounded-2xl" />
               <div className="relative p-8 rounded-2xl bg-[#0a0a0f]">
                 <div className="absolute -top-4 left-1/2 -translate-x-1/2">
-                  <span className="px-4 py-1.5 rounded-full bg-gradient-to-r from-violet-500 to-fuchsia-500 text-sm font-semibold">
+                  <span className="px-4 py-1.5 rounded-full bg-gradient-to-r from-cyan-500 to-teal-500 text-sm font-semibold">
                     Most Popular
                   </span>
                 </div>
@@ -350,16 +350,16 @@ export default function HomePage() {
                     "API access",
                   ].map((feature) => (
                     <li key={feature} className="flex items-center gap-3">
-                      <div className="flex-shrink-0 w-5 h-5 rounded-full bg-violet-500/20 flex items-center justify-center">
-                        <Check className="w-3 h-3 text-violet-400" />
+                      <div className="flex-shrink-0 w-5 h-5 rounded-full bg-cyan-500/20 flex items-center justify-center">
+                        <Check className="w-3 h-3 text-cyan-400" />
                       </div>
                       <span className="text-gray-300">{feature}</span>
                     </li>
                   ))}
                 </ul>
                 <Link href="/register" className="relative group block w-full">
-                  <div className="absolute -inset-0.5 bg-gradient-to-r from-violet-600 to-fuchsia-600 rounded-xl blur opacity-60 group-hover:opacity-100 transition duration-200" />
-                  <span className="relative flex items-center justify-center gap-2 bg-gradient-to-r from-violet-600 to-fuchsia-600 py-3 rounded-xl font-semibold w-full">
+                  <div className="absolute -inset-0.5 bg-gradient-to-r from-cyan-500 to-teal-500 rounded-xl opacity-40 group-hover:opacity-60 transition duration-200" />
+                  <span className="relative flex items-center justify-center gap-2 bg-gradient-to-r from-cyan-500 to-teal-500 py-3 rounded-xl font-semibold w-full">
                     Start Free Trial
                     <ArrowRight className="w-4 h-4" />
                   </span>
@@ -370,7 +370,7 @@ export default function HomePage() {
 
           <p className="text-center text-gray-500 mt-8">
             Need a custom plan for your agency?{" "}
-            <a href="mailto:hello@reachmicro.com" className="text-violet-400 hover:text-violet-300 transition-colors">
+            <a href="mailto:hello@reachmicro.com" className="text-cyan-400 hover:text-cyan-300 transition-colors">
               Let&apos;s talk
             </a>
           </p>
@@ -381,12 +381,12 @@ export default function HomePage() {
       <section className="py-24 px-4 sm:px-6 lg:px-8 border-y border-white/5">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <span className="inline-block px-4 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-sm font-medium mb-4">
+            <span className="inline-block px-4 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-sm font-medium mb-4">
               Testimonials
             </span>
             <h2 className="text-4xl md:text-5xl font-bold">
               Loved by
-              <span className="bg-gradient-to-r from-cyan-400 to-violet-400 bg-clip-text text-transparent"> marketers</span>
+              <span className="bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent"> marketers</span>
             </h2>
           </div>
 
@@ -419,7 +419,7 @@ export default function HomePage() {
                 </div>
                 <p className="text-gray-300 mb-6 leading-relaxed">&ldquo;{testimonial.quote}&rdquo;</p>
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-gradient-to-br from-violet-500 to-fuchsia-500 flex items-center justify-center text-sm font-semibold">
+                  <div className="w-10 h-10 rounded-full bg-gradient-to-br from-cyan-500 to-teal-500 flex items-center justify-center text-sm font-semibold">
                     {testimonial.avatar}
                   </div>
                   <div>
@@ -482,7 +482,7 @@ export default function HomePage() {
       <section className="py-24 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           <div className="relative overflow-hidden rounded-3xl">
-            <div className="absolute inset-0 bg-gradient-to-r from-violet-600 to-fuchsia-600" />
+            <div className="absolute inset-0 bg-gradient-to-r from-cyan-600 to-teal-600" />
             <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48cGF0dGVybiBpZD0iYSIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiBwYXR0ZXJuVHJhbnNmb3JtPSJyb3RhdGUoNDUpIj48cGF0aCBkPSJNLTEwIDMwaDYwdjJoLTYweiIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjAzKSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3QgZmlsbD0idXJsKCNhKSIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIvPjwvc3ZnPg==')] opacity-50" />
             <div className="relative px-8 py-16 md:px-16 md:py-20 text-center">
               <h2 className="text-3xl md:text-5xl font-bold mb-4">
@@ -494,7 +494,7 @@ export default function HomePage() {
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <Link
                   href="/register"
-                  className="flex items-center gap-2 bg-white text-violet-600 px-8 py-4 rounded-xl text-lg font-semibold hover:bg-gray-100 transition-colors w-full sm:w-auto justify-center"
+                  className="flex items-center gap-2 bg-white text-cyan-600 px-8 py-4 rounded-xl text-lg font-semibold hover:bg-gray-100 transition-colors w-full sm:w-auto justify-center"
                 >
                   Start Your Free Trial
                   <ArrowRight className="w-5 h-5" />
@@ -514,7 +514,7 @@ export default function HomePage() {
           <div className="grid md:grid-cols-5 gap-8 mb-12">
             <div className="md:col-span-2">
               <Link href="/" className="flex items-center gap-2 mb-4">
-                <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-violet-500 to-fuchsia-500 flex items-center justify-center">
+                <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-cyan-400 to-teal-500 flex items-center justify-center">
                   <Sparkles className="w-4 h-4 text-white" />
                 </div>
                 <span className="text-xl font-bold">ReachMicro</span>

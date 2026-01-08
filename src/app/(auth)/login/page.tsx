@@ -42,14 +42,14 @@ export default function LoginPage() {
     <div className="min-h-screen flex items-center justify-center bg-[#0a0a0f] py-12 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
       {/* Background effects */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-1/4 left-1/4 w-[400px] h-[400px] bg-violet-600/20 rounded-full blur-[120px]" />
-        <div className="absolute bottom-1/4 right-1/4 w-[300px] h-[300px] bg-fuchsia-600/20 rounded-full blur-[100px]" />
+        <div className="absolute top-1/4 left-1/4 w-[400px] h-[400px] bg-cyan-500/10 rounded-full blur-[150px]" />
+        <div className="absolute bottom-1/4 right-1/4 w-[300px] h-[300px] bg-teal-500/10 rounded-full blur-[120px]" />
       </div>
 
       <div className="max-w-md w-full relative">
         {/* Logo */}
         <Link href="/" className="flex items-center justify-center gap-2 mb-8">
-          <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-violet-500 to-fuchsia-500 flex items-center justify-center">
+          <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-cyan-400 to-teal-500 flex items-center justify-center">
             <Sparkles className="w-5 h-5 text-white" />
           </div>
           <span className="text-2xl font-bold text-white">ReachMicro</span>
@@ -82,7 +82,7 @@ export default function LoginPage() {
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="you@example.com"
                   required
-                  className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-violet-500 focus:border-transparent transition-all"
+                  className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition-all"
                 />
               </div>
 
@@ -97,7 +97,7 @@ export default function LoginPage() {
                   onChange={(e) => setPassword(e.target.value)}
                   placeholder="Enter your password"
                   required
-                  className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-violet-500 focus:border-transparent transition-all"
+                  className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition-all"
                 />
               </div>
 
@@ -106,8 +106,8 @@ export default function LoginPage() {
                 disabled={loading}
                 className="relative group w-full"
               >
-                <div className="absolute -inset-0.5 bg-gradient-to-r from-violet-600 to-fuchsia-600 rounded-xl blur opacity-60 group-hover:opacity-100 transition duration-200" />
-                <span className="relative flex items-center justify-center gap-2 bg-gradient-to-r from-violet-600 to-fuchsia-600 px-6 py-3 rounded-xl text-white font-semibold w-full">
+                <div className="absolute -inset-0.5 bg-gradient-to-r from-cyan-500 to-teal-500 rounded-xl opacity-40 group-hover:opacity-60 transition duration-200" />
+                <span className="relative flex items-center justify-center gap-2 bg-gradient-to-r from-cyan-500 to-teal-500 px-6 py-3 rounded-xl text-white font-semibold w-full">
                   {loading ? (
                     <Loader2 className="w-5 h-5 animate-spin" />
                   ) : (
@@ -122,7 +122,7 @@ export default function LoginPage() {
 
             <p className="mt-6 text-center text-sm text-gray-400">
               Don&apos;t have an account?{" "}
-              <Link href="/register" className="text-violet-400 hover:text-violet-300 font-medium transition-colors">
+              <Link href="/register" className="text-cyan-400 hover:text-cyan-300 font-medium transition-colors">
                 Sign up free
               </Link>
             </p>
